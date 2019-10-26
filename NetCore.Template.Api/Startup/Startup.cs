@@ -1,19 +1,13 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using NetCore.Template.Api.Configuration;
 using NetCore.Template.Configuration;
 using NetCore.Template.Context;
 using NetCore.Template.Infrastructure;
 using NetCore.Template.Repositories;
-using NLog.Extensions.Logging;
-using NLog.Web;
-using System;
 
 namespace NetCore.Template.Api
 {

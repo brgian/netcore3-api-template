@@ -23,7 +23,7 @@ namespace NetCore.Template.BackOffice.Controllers
         [HttpGet()]
         public IActionResult Get()
         {
-            logger.LogInformation("Testing log...");
+            logger.LogDebug("Testing log...");
 
             var list = myEntityService.GetAll();
 
