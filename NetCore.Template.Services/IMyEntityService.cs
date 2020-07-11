@@ -5,7 +5,7 @@ namespace NetCore.Template.Services
 {
     public interface IMyEntityService
     {
-        IEnumerable<MyEntityDto> GetAll();
+        List<MyEntityDto> GetAll();
         MyEntityDto Get(string key);
 
         MyEntityDto Update(MyEntityDto updateUserRequest);

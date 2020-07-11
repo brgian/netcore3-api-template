@@ -4,7 +4,7 @@ using NetCore.Template.Entities;
 using NetCore.Template.Repositories;
 using System;
 using System.Collections.Generic;
-
+using System.Linq;
 
 namespace NetCore.Template.Services.Implementation
 {
@@ -26,11 +26,11 @@ namespace NetCore.Template.Services.Implementation
             return mapper.Map<MyEntityDto>(entity);
         }
 
-        public IEnumerable<MyEntityDto> GetAll()
+        public List<MyEntityDto> GetAll()
         {
-            var list = unitOfWork.MyEntityRepository.GetAll();
+            var list = unitOfWork.MyEntityRepository.GetAll().ToList();
 
-            return mapper.Map<IEnumerable<MyEntityDto>>(list);
+            return mapper.Map<List<MyEntityDto>>(list);
         }
 
         public MyEntityDto Update(MyEntityDto entityDto)
